@@ -1,0 +1,116 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+
+    # match:
+    #     label: void.match::lang.match.label
+    #     description: void.match::lang.match.description
+    #     type: relation
+    #     nameFrom: title
+    #     span: auto
+    #     required: true
+
+tabs:
+    fields:
+
+        pages:
+            span: full
+            label: void.comic::lang.comic.pages
+            description: void.comic::lang.comic.pages_desc
+            tab: void.comic::lang.comic.pages
+            type: fileupload
+            mode: image
+            imageHeight: 150
+            imageWidth: 100
+            required: true
+
+        winner:
+            span: left
+            label: void.comic::lang.comic.winner
+            description: void.comic::lang.comic.winner_desc
+            tab: void.comic::lang.comic.details
+
+        points:
+            span: right
+            label: void.comic::lang.comic.points
+            description: void.comic::lang.comic.points_desc
+            tab: void.comic::lang.comic.details
+
+        is_accepted:
+            span: left
+            label: void.comic::lang.comic.is_accepted
+            description: void.comic::lang.comic.is_accepted_desc
+            type: switch
+            tab: void.comic::lang.comic.details
+
+        accepted_at:
+            span: right
+            label: void.comic::lang.comic.accepted_at
+            description: void.comic::lang.comic.accepted_at_desc
+            type: datepicker
+            mode: date
+            trigger:
+                action: enable
+                field: is_accepted
+                condition: checked
+            tab: void.comic::lang.comic.details
+
+        is_extended:
+            span: left
+            label: void.comic::lang.comic.is_extended
+            description: void.comic::lang.comic.is_extended_desc
+            type: switch
+            tab: void.comic::lang.comic.details
+
+        extended_at:
+            span: right
+            label: void.comic::lang.comic.aextended_at
+            description: void.comic::lang.comic.extended_at_desc
+            type: datepicker
+            mode: date
+            trigger:
+                action: enable
+                field: is_extended
+                condition: checked
+            tab: void.comic::lang.comic.details
+
+        is_complete:
+            span: left
+            label: void.comic::lang.comic.is_complete
+            description: void.comic::lang.comic.is_complete_desc
+            type: switch
+            tab: void.comic::lang.comic.details
+
+        completed_at:
+            span: right
+            label: void.comic::lang.comic.completed_at
+            description: void.comic::lang.comic.completed_at_desc
+            type: datepicker
+            mode: date
+            trigger:
+                action: enable
+                field: is_complete
+                condition: checked
+            tab: void.comic::lang.comic.details
+
+        is_published:
+            span: left
+            label: void.comic::lang.comic.is_published
+            description: void.comic::lang.comic.is_published_desc
+            type: switch
+            tab: void.comic::lang.comic.details
+
+        published_at:
+            span: right
+            label: void.comic::lang.comic.published_at
+            description: void.comic::lang.comic.published_at_desc
+            type: datepicker
+            mode: date
+            trigger:
+                action: enable
+                field: is_published
+                condition: checked
+            tab: void.comic::lang.comic.details
+

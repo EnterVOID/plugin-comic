@@ -1,0 +1,16 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+
+    id:
+        label: void.comic::lang.comic.id
+        invisible: true
+
+    # match_id:
+    #     label: void.match::lang.match.label
+    #     invisible: true
+
+    created_at:
+        label: void.comic::lang.comic.created_at

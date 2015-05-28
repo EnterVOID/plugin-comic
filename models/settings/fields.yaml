@@ -1,0 +1,53 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+tabs:
+    fields:
+
+        # Require Activation
+        require_activation:
+            span: auto
+            label: void.comic::lang.settings.require_activation
+            comment: void.comic::lang.settings.require_activation_comment
+            type: switch
+            tab: void.comic::lang.settings.activation_tab
+
+        # Activation Mode
+        activate_mode:
+            span: auto
+            commentAbove: void.comic::lang.settings.activate_mode_comment
+            label: void.comic::lang.settings.activate_mode
+            type: radio
+            tab: void.comic::lang.settings.activation_tab
+
+        # Welcome Template
+        welcome_template:
+            span: auto
+            label: void.comic::lang.settings.welcome_template
+            comment: void.comic::lang.settings.welcome_template_comment
+            type: dropdown
+            default: void.comic::mail.activate
+            tab: void.comic::lang.settings.activation_tab
+
+        # Hint
+        template_hint:
+            type: hint
+            path: $/void/comic/models/settings/_template_hint.htm
+            tab: void.comic::lang.settings.activation_tab
+
+        # Throttle Sign In
+        use_throttle:
+            span: auto
+            label: void.comic::lang.settings.use_throttle
+            comment: void.comic::lang.settings.use_throttle_comment
+            type: switch
+            tab: void.comic::lang.settings.signin_tab
+
+        # Login Attribute
+        login_attribute:
+            span: auto
+            label: void.comic::lang.settings.login_attribute
+            comment: void.comic::lang.settings.login_attribute_comment
+            type: dropdown
+            tab: void.comic::lang.settings.signin_tab

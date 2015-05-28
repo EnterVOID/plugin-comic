@@ -1,0 +1,16 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: void.comic::lang.comic.label
+form: ~/plugins/void/comic/models/comic/fields.yaml
+modelClass: Void\Comic\Models\Comic
+defaultRedirect: void/comic/comics
+
+create:
+    redirect: void/comic/comics/update/:id
+    redirectClose: void/comic/comics
+
+update:
+    redirect: void/comic/comics
+    redirectClose: void/comic/comics
